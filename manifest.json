@@ -1,0 +1,27 @@
+{
+  "manifest_version": 3,
+  "name": "Subtitle Masker",
+  "version": "0.1.0",
+  "description": "Draw an adjustable mask over video subtitles.",
+  "permissions": ["activeTab", "scripting"],
+  "action": {
+    "default_title": "Subtitle Masker",
+    "default_popup": "popup.html",
+    "default_icon": "icon.svg"
+  },
+  "icons": {"48": "icon.svg", "96": "icon.svg"},
+  "background": {"scripts": ["background.js"]},
+  "commands": {
+    "toggle-mask": {
+      "suggested_key": {"default": "Alt+Shift+M"},
+      "description": "Show or hide the mask, or draw a new one"
+    }
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "subtitle-masker@local",
+      "strict_min_version": "109.0",
+      "data_collection_permissions": {"required": ["none"]}
+    }
+  }
+}

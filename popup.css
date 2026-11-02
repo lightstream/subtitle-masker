@@ -1,0 +1,14 @@
+:root { color-scheme: light dark; font: 13px system-ui, sans-serif; }
+body { width: 290px; margin: 0; }
+main { padding: 14px; display: grid; gap: 10px; }
+button { font: inherit; padding: 7px 10px; cursor: pointer; }
+button:disabled { cursor: default; }
+.primary { background: #16675e; color: white; border: 1px solid #16675e; border-radius: 4px; }
+.row { display: flex; gap: 8px; }
+.row button { flex: 1; }
+.colour { align-items: center; }
+input[type=color] { width: 34px; height: 30px; padding: 0; border: none; cursor: pointer; }
+.opacity { display: flex; justify-content: space-between; }
+input[type=range] { width: 100%; margin: 0; }
+p { margin: 0; font-size: 12px; line-height: 1.5; opacity: .8; }
+#status { opacity: 1; }

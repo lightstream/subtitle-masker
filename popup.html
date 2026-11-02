@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Subtitle Masker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <main>
+    <button id="draw" class="primary">Draw mask</button>
+    <button id="toggle" disabled>Hide</button>
+    <div class="row colour">
+      <label for="colour">Colour</label>
+      <input id="colour" type="color" value="#000000">
+      <button id="sample" disabled>Match video colour</button>
+    </div>
+    <label class="opacity" for="opacity">Opacity <output id="amount">100%</output></label>
+    <input id="opacity" type="range" min="5" max="100" value="100" disabled>
+    <button id="remove" disabled>Remove mask</button>
+    <p>Drag to move; use the handles to resize. Wheel over the mask to change opacity.</p>
+    <p><kbd>Alt</kbd> + <kbd>Shift</kbd> + <kbd>M</kbd> shows / hides it.</p>
+    <p id="status" role="status" hidden></p>
+  </main>
+  <script src="popup.js"></script>
+</body>
+</html>

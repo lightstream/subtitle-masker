@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<title>Subtitle Masker test player</title>
+<style>
+  body { margin: 32px; background: #eee; color: #222; font: 16px system-ui; }
+  #player { width: 640px; height: 360px; background: black; }
+  #player:fullscreen { width: 100vw; height: 100vh; }
+  video { display: block; width: 100%; height: 100%; object-fit: contain; }
+  button { margin: 12px 8px 12px 0; padding: 8px; }
+</style>
+<h1>Subtitle Masker test player</h1>
+<p>A generated video with embedded subtitles. No external media or network requests.</p>
+<div id="player"><video id="video" muted autoplay playsinline></video></div>
+<button id="play">Play</button>
+<button id="resize">Resize player</button>
+<button id="fullscreen">Container fullscreen</button>
+<button id="native">Video-element fullscreen (unsupported)</button>
+<p>Draw over the subtitles, move and resize the mask, then try wheel opacity and colour matching.</p>
+<div style="height: 900px"></div>
+<script src="player.js"></script>
+</html>
